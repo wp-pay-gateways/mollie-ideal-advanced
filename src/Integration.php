@@ -1,8 +1,12 @@
 <?php
 
-class Pronamic_WP_Pay_Gateways_Mollie_IDealAdvanced_GatewayIntegration {
+class Pronamic_WP_Pay_Gateways_Mollie_IDealAdvanced_Integration {
 	public function __construct() {
-		$this->id = 'mollie-ideal-advanced';
+		$this->id            = 'mollie-ideal-advanced';
+		$this->name          = 'Mollie - iDEAL Advanced';
+		$this->dashboard_url = 'http://www.mollie.nl/';
+		$this->provider      = 'mollie';
+		$this->deprecated    = true;
 	}
 
 	public function get_config_factory_class() {
